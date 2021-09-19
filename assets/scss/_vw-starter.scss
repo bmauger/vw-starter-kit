@@ -9,7 +9,7 @@
 //
 //   Set the variables below to match your Photoshop file widths (in pixels) and to specify breakpoints based on browser window size.
 //
-// ---------------------------------------------------------------------------- 
+// ----------------------------------------------------------------------------
 
 	// base font size must be in pixels!!!
 	$root-font-size-constant: 16px !default;
@@ -141,11 +141,11 @@
 	@media screen and (max-width: $mobile-max) {
 		font-size: px2vw($root-font-size-constant, $mobile-layout);
 	}
-	
+
 	// because of possible rounding, we make sure the font-size is correct at the layout sizes
-	@media screen and (width: $layout-desktop) and (min-width: $desktop-min) and (max-width: $desktop-max),
-	screen and (width: $layout-tablet) and (min-width: $tablet-min) and (max-width: $tablet-max),
-	screen and (width: $layout-mobile) and (max-width: $mobile-max) {
+	@media screen and (width: $desktop-layout) and (min-width: $desktop-min) and (max-width: $desktop-max),
+	screen and (width: $tablet-layout) and (min-width: $tablet-min) and (max-width: $tablet-max),
+	screen and (width: $mobile-layout) and (max-width: $mobile-max) {
 		font-size: $root-font-size-constant;
 	}
 }
