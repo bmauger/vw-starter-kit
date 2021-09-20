@@ -1,7 +1,7 @@
 @import "vw-starter";
 
-* {
-	box-sizing: border-box;
+.container {
+	min-width: 320px;
 }
 
 html {
@@ -21,6 +21,15 @@ h1 {
 	text-align: center;
 }
 
-.test {
-	
+p {
+	font-size: px2rem(16);
+	@media (max-width: font-size-breakpoint(12px, $mobile-layout, 16px)) {
+		font-size: 12px;
+	}
+	@media (max-width: font-size-breakpoint(12px, $tablet-layout, 16px)) {
+		font-size: 12px;
+	}
+	@media (max-width: font-size-breakpoint(12px, $desktop-layout, 16px)) {
+		font-size: 12px;
+	}
 }

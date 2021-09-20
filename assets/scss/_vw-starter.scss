@@ -15,16 +15,16 @@
 	$root-font-size-constant: 16px !default;
 
 	// layouts -- the pixel width of the Photoshop file for each layout
-	$desktop-layout:	1250px !default;
-	$tablet-layout:		640px !default;
+	$desktop-layout:	1200px !default;
+	$tablet-layout:		768px !default;
 	$mobile-layout:		320px !default;
 
-	// min max breakpoints -- the browser window size at which the layout should change
-	$desktop-max: 		1250px !default;
-	$desktop-min: 		900px !default;
-	$tablet-max: 		899px !default;
-	$tablet-min: 		601px !default;
-	$mobile-max: 		600px !default;
+	// min max breakpoints -- the browser window size at which the layout should change.
+	$desktop-max: 		1200px !default;
+	$desktop-min: 		769px !default;
+	$tablet-max: 		768px !default;
+	$tablet-min: 		577px !default;
+	$mobile-max: 		576px !default;
 
 // ----------------------------------------------------------------------------
 //
@@ -144,8 +144,8 @@
 
 	// because of possible rounding, we make sure the font-size is correct at the layout sizes
 	@media screen and (width: $desktop-layout) and (min-width: $desktop-min) and (max-width: $desktop-max),
-	screen and (width: $tablet-layout) and (min-width: $tablet-min) and (max-width: $tablet-max),
-	screen and (width: $mobile-layout) and (max-width: $mobile-max) {
+				 screen and (width: $tablet-layout) and (min-width: $tablet-min) and (max-width: $tablet-max),
+				 screen and (width: $mobile-layout) and (max-width: $mobile-max) {
 		font-size: $root-font-size-constant;
 	}
 }
